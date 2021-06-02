@@ -13,6 +13,19 @@
 
 `$ wasmtime dist/hello.wasm`
 
+## Debugging
+
+**not working**
+
+compile with DWARF info:
+`$ ./build_wasm.sh hello -g`
+
+open in debugger:
+`lldb-11 -- wasmtime -g dist/hello.wasm`
+
+references:
+* https://github.com/bytecodealliance/wasmtime/issues/1896
+
 ## Notes
 
 * `build_wasm.sh` and `wasm_include` is based on work done by https://github.com/zamfofex/v-wasm
